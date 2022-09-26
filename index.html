@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first website</title>
+  </head>
+  <body>
+    <h1>Hello world!</h1>
+    <p>Welcome to my first website.</p>
+    <h2>Web Security</h2>
+    <p id="web-security-question">
+      How would you advise a potential client to secure his/her website from web
+      security attacks? Note: the word count for your answer should not be
+      greater than 250 words
+    </p>
+    <p id="web-security-answer">
+      To secure my clients' website I would advise them to do the following:
+    </p>
+    <ul>
+      <li>
+        Requiring a strong password from the user with a minimum of 8
+        characters, upper and lower case letters, at least one number and a
+        special character. The option of two-factor authentication is also
+        greatly increasing security since any malicious user would need access
+        to a local device. SMS is not recommended for this since cell provider
+        spoofing is a real possibility.
+      </li>
+      <li>
+        Implement an automatic user timeout (or implement the API for it as a
+        front-end developer) to automatically time out a user's session after a
+        period of inactivity.
+      </li>
+      <li>
+        Never trust a user entry and make sure that any user inputs only accept
+        text and not HTML (for example innerText instead of innerHTML)
+      </li>
+      <li>
+        Sanitising all data packages to avoid SQL injection and other malicious
+        code intrusion attempts.
+      </li>
+      <li>
+        User a vulnerability testing tool such as
+        <a
+          href="https://pentest-tools.com/website-vulnerability-scanning/website-scanner"
+          >Pentest Tools Website Scanner</a
+        >
+      </li>
+      <li>Configuring the webserver to use HTTPS and HSTS.</li>
+      <li>
+        Only storing and displaying the information that you actually need. If
+        the site is storing sensitive information such as credit card info, only
+        display the last 4 digits.
+      </li>
+    </ul>
+  </body>
+</html>
